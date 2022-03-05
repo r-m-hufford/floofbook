@@ -1,3 +1,46 @@
 html {
   font-size: 10px;
+  --royal-blue: #00539cff;
+  --peach: #eea47fff;
+  --buttermilk: #fff7c0;
+  --dark-grey: #333333;
+  --medium-grey: #808080;
+  --light-grey: #d9d9d9;
+  --near-white: #f2f2f2;
+}
+
+body {
+  font-family: Fredoka;
+  color: var(--dark-grey);
+}
+/*  -----------  ELEMENTS  -----------  */
+/* buttons */
+.button-primary {
+  background-color: var(--peach);
+}
+
+/*  -----------  COMPONENTS  -----------  */
+/*  navbar */
+.navbar {
+  background-color: var(--royal-blue);
+}
+
+.navbar a {
+  color: var(--light-grey);
+}
+
+/*  -----------  PAGES  -----------  */
+/* login page */
+
+.login-container {
+  background-color: var(--near-white);
+  border: var(--royal-blue) solid 3px;
+  border-radius: 2rem;
+  color: var(--dark-grey);
+  display: flex;
+  font-family: Fredoka;
+  font-size: 24px;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
 }

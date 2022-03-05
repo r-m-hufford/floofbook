@@ -1,19 +1,8 @@
-{{!-- template-lint-disable no-forbidden-elements --}}
-<style>
-  .login-container{
-    border: darkblue solid 3px;
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    margin: 2rem;
-    padding: 2rem;
-  }
-</style>
-
 <div class="login-container">
     <form>
     <section class="form-group">
-      <label for="formGroupExampleInput">username</label>
+      <label for="formGroupExampleInput">username </label>
+      <i class="fa-solid fa-dog"></i>
       <input type="text" class="form-control" id="loginFormUsername" placeholder="fido">
     </section>
     <section class="form-group">
@@ -22,7 +11,7 @@
     </section>
     <button 
       {{on 'click' this.onLoginFormSubmit}} 
-      class="btn btn-primary btn-lg btn-block" type="submit">Login
+      class="btn btn-primary btn-lg btn-block button-primary" type="submit">Login
     </button>
   </form>
 </div>
