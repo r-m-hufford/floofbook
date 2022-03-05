@@ -10,6 +10,6 @@ export default class LoginFormComponent extends Component {
   @action
   onLoginFormSubmit(evt){
     evt.preventDefault();
-    transitionTo('/user')
+    transitionTo('/profile')
   }
 };
