@@ -1,17 +1,24 @@
+<style>
+
+</style>
 <div class="login-container">
     <form>
-    <section class="form-group">
-      <label for="formGroupExampleInput">username </label>
+      <label for="" class="loginFormHeader">Who's a good dog?</label>
       <i class="fa-solid fa-dog"></i>
-      <input type="text" class="form-control" id="loginFormUsername" placeholder="fido">
+    <section class="form-group">
+      <input type="text" class="form-control" id="loginFormUsername" placeholder="username">
     </section>
     <section class="form-group">
-      <label for="formGroupExampleInput2">password</label>
-      <input type="password" class="form-control" id="loginFormPassword" placeholder="enter password">
+      <div class="input-group">
+          <input type="password" class="form-control password-login-input" placeholder="password" aria-label="" aria-describedby="basic-addon1">
+        <div class="input-group-append">
+          <button class="fa-solid fa-eye fa-2xs show-hide-icon" type="button"></button>
+        </div>
+      </div>
     </section>
     <button 
-      {{on 'click' this.onLoginFormSubmit}} 
-      class="btn btn-primary btn-lg btn-block button-primary" type="submit">Login
+      {{on 'click' this.onLoginFormSubmit}}
+      class="btn btn-primary btn-lg btn-block button-primary" id="login-submit-button" type="submit">Login
     </button>
   </form>
 </div>

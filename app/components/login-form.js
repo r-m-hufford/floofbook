@@ -10,6 +10,8 @@ export default class LoginFormComponent extends Component {
   @action
   onLoginFormSubmit(evt){
     evt.preventDefault();
-    transitionTo('/profile')
+    console.log('submit button clicked')
+    //@ts-ignore
+    window.location = '/user';
   }
 };

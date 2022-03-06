@@ -17,6 +17,7 @@ body {
 /* buttons */
 .button-primary {
   background-color: var(--peach);
+  border-color: var(--royal-blue);
 }
 
 /*  -----------  COMPONENTS  -----------  */
@@ -43,4 +44,17 @@ body {
   justify-content: center;
   margin: 2rem;
   padding: 2rem;
+}
+
+.loginFormHeader {
+  font-size: 1.5rem;
+}
+
+.show-hide-icon {
+  background: white;
+  border: 1px solid #ced4da;
+}
+
+.password-login-input {
+  border-right: none;
 }
