@@ -12,6 +12,7 @@ html {
 body {
   font-family: Fredoka;
   color: var(--dark-grey);
+  height: 300vh;
 }
 /*  -----------  ELEMENTS  -----------  */
 /* buttons */
@@ -43,6 +44,7 @@ body {
   font-size: 24px;
   justify-content: center;
   margin: 2rem;
+  margin-top: 100px;
   padding: 2rem;
 }
 
@@ -57,4 +59,12 @@ body {
 
 .password-login-input {
   border-right: none;
+}
+
+.sign-up-container {
+  text-align: center;
+}
+
+.sign-up-text-block {
+  font-size: 1rem;
 }

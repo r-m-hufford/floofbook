@@ -3,20 +3,23 @@
 <style>
   .navbar-floofbook {
     height: 75px;
-    position: relative;
+    width: 100vw;
+    position: fixed;
   }
 
   .notification-center--closed {
     background-color: var(--peach);
-    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 33% 100%);
     height: 75px;
     position: absolute;
-    right: 0;
-    width: 75px;
+    right: -150px;
+    width: 225px;
   }
+
+
 </style>
-<nav class="navbar sticky-top navbar-floofbook">
-  <a class="navbar-floofbook-link" href="">Floofbook</a>
-<div class="notification-center--closed"></div>
-</nav>
+  <nav class="navbar sticky-top navbar-floofbook">
+    <a class="navbar-floofbook-link" href="">Floofbook</a>
+    <div class="notification-center--closed"></div>
+  </nav>
 {{outlet}}
