@@ -1,5 +1,11 @@
 <style>
+  .sign-up-container {
+    text-align: center;
+  }
 
+  .sign-up-text-block {
+    font-size: 1rem;
+  }
 </style>
 <div class="login-container">
     <form>
@@ -20,5 +26,8 @@
       {{on 'click' this.onLoginFormSubmit}}
       class="btn btn-primary btn-lg btn-block button-primary" id="login-submit-button" type="submit">Login
     </button>
+    <section class="sign-up-container">
+      <p class="sign-up-text-block">dont have an account? <a href="/sign-up">Sign Up</a></p>
+    </section>
   </form>
 </div>
