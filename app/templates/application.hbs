@@ -1,31 +1,3 @@
 {{page-title "FloofbookWebapp"}}
-
-<style>
-  .navbar-floofbook {
-    height: 75px;
-    width: 100vw;
-    position: fixed;
-  }
-
-  .notification-center {
-    background-color: var(--peach);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 33% 100%);
-    height: 75px;
-    position: absolute;
-    right: -150px;
-    width: 225px;
-    transition: transform 0.5s;
-    animation: none;
-  }
-
-  .notification-center:hover {
-    transform: translateX(-150px)
-  }
-
-
-</style>
-  <nav class="navbar sticky-top navbar-floofbook">
-    <a class="navbar-floofbook-link" href="">Floofbook</a>
-    <div class="notification-center"></div>
-  </nav>
+<Navbar />
 {{outlet}}
