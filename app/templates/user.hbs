@@ -1,126 +1,86 @@
 {{page-title "User"}}
+
 <style>
-.text-white {
-    color: #fff !important;
-}
-.ui-bg-overlay-container, .ui-bg-video-container {
-    position: relative;
-}
-.ui-bg-cover {
-    background-color: transparent;
-    background-position: center center;
-    background-size: cover;
-}
-.ui-bg-overlay-container .ui-bg-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-}
+  .profile-container {
+    background-color: var(--near-white);
+  border: var(--royal-blue) solid 3px;
+  border-radius: 2rem;
+  color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    // border: darkblue solid 3px;
+    margin: 15px;
+    padding: 2rem;
+  }
 
-.bg-dark {
-    background-color: rgba(24,28,33,0.9) !important;
-}
-.opacity-50 {
-    opacity: .5 !important;
-}
-.bg-dark {
-    background-color: rgba(24,28,33,0.9) !important;
-}
-.ui-bg-overlay-container>*, .ui-bg-video-container>* {
-    position: relative;
-}
-@media (min-width: 992px){
-    .container, .container-fluid {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-}
-.media, .media>:not(.media-body), .jumbotron, .card {
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-}
-.d-flex, .d-inline-flex, .media, .media>:not(.media-body), .jumbotron, .card {
-    -ms-flex-negative: 1;
-    flex-shrink: 1;
-}
-.ui-w-100 {
-    width: 100px !important;
+  .avatar-and-info {
+    display: flex;
+    flex-direction: row;
+    // border: darkgreen solid 3px;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .profile-page-avatar {
+    // border: darksalmon solid 3px;
+    height: 125px;
+    width: 125px;
+    max-width: 40vw;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    // border: darkviolet solid 3px;
+    justify-content: space-between;
+    width: 125px;
+    max-width: 40vw;
+  }
+
+  .info-heading {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+  }
+
+  .info {
+    // border: darkkhaki dashed 1px;
+    align-self: center;
+    width: 90px;
+  }
+
+  .bio-container {
+    // border: darkgoldenrod solid 3px;
     height: auto;
-}
-.font-weight-bold {
-    font-weight: 700 !important;
-}
-.opacity-75 {
-    opacity: .75 !important;
-}
-.tabs-alt.nav-tabs .nav-link.active, .tabs-alt.nav-tabs .nav-link.active:hover, .tabs-alt.nav-tabs .nav-link.active:focus, .tabs-alt>.nav-tabs .nav-link.active, .tabs-alt>.nav-tabs .nav-link.active:hover, .tabs-alt>.nav-tabs .nav-link.active:focus {
-    -webkit-box-shadow: 0 -2px 0 #26B4FF inset;
-    box-shadow: 0 -2px 0 #26B4FF inset;
-}
+    width: 253px;
+    padding-top: 2rem;
+    margin: auto;
+  }
 
-.nav-tabs:not(.nav-fill):not(.nav-justified) .nav-link, .nav-pills:not(.nav-fill):not(.nav-justified) .nav-link {
-    margin-right: .125rem;
-}
-.nav-tabs.tabs-alt .nav-link, .tabs-alt>.nav-tabs .nav-link {
-    border-width: 0 !important;
-    border-radius: 0 !important;
-    background-color: transparent !important;
-}
-.nav-tabs .nav-link.active {
-    border-bottom-color: #fff;
-} 
+  .bio::before{
+    content: "BIO: "
+  }
 </style>
 
-<div class="ui-bg-cover ui-bg-overlay-container text-white" style="background-color: #87CEFA;">
-    <div class="ui-bg-overlay bg-dark opacity-50"></div>
-    <div class="container">
-      <div class="text-center py-5">
-        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="ui-w-100 rounded-circle">
-
-        <div class="col-md-8 col-lg-6 col-xl-5 p-0 mx-auto">
-          <h4 class="font-weight-bold my-4">John Doe</h4>
-
-          <div class="opacity-75 mb-4">
-            Lorem ipsum dolor sit amet, nibh suavitate qualisque ut nam. Ad harum primis electram duo, porro principes ei has.
-          </div>
-        </div>
-
-        <div class="text-center">
-          <a href="javascript:void(0)" class="d-inline-block text-white">
-            <strong>234</strong>
-            <span class="opacity-75">followers</span>
-          </a>
-          <a href="javascript:void(0)" class="d-inline-block text-white ml-3">
-            <strong>111</strong>
-            <span class="opacity-75">following</span>
-          </a>
-        </div>
-      </div>
+<div class="profile-container">
+  <section class="avatar-and-info">
+    <div class="profile-page-avatar">
+      <img src="https://res.cloudinary.com/sumesarpy/image/upload/w_125,ar_1:1,c_fill,g_auto,e_art:hokusai/v1647142025/fern_qajzoz.jpg" alt="fern dog">
     </div>
-
-    <LinkTo @route="login"
-    class="btn btn-primary btn-lg btn-block" type="submit">Logout
-    </LinkTo>
-
-    <div class="ui-bg-overlay-container">
-      <div class="ui-bg-overlay bg-dark opacity-25"></div>
-      <ul class="nav nav-tabs tabs-alt justify-content-center border-transparent">
-        <li class="nav-item">
-          <a class="nav-link text-white py-4 active" href="javascript:void(0)">Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white py-4" href="javascript:void(0)">Likes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white py-4" href="javascript:void(0)">Followers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white py-4" href="javascript:void(0)">Following</a>
-        </li>
-      </ul>
+    <div class="info-container">
+      <div class="info-heading">name:</div>
+      <div class="info">fern</div>
+      <div class="info-heading">breed:</div>
+      <div class="info">mutt</div>
+      <div class="info-heading">favorite toy:</div>
+      <div class="info">real rabbits</div>
+      <div class="info-heading">favorite treat:</div>
+      <div class="info">bacon</div>
     </div>
-  </div>
+  </section>
+  <section class="bio-container">
+    <p class="bio">doing stuff is my passion. everyday stuff needs done and I do it. Mountain Dew slushies are the best. I will murder every rabbit, squirrel and bird I can get my paws on</p>
+  </section>
+</div>
+
 {{outlet}}
