@@ -10,7 +10,6 @@ export default class LoginFormComponent extends Component {
   onLoginFormSubmit(evt) {
     evt.preventDefault();
     console.log('submit button clicked');
-    //@ts-ignore
     window.location = '/user';
   }
 }

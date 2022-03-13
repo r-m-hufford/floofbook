@@ -1,0 +1,43 @@
+
+<style>
+  .navbar-floofbook {
+    height: 75px;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .notification-center {
+    background-color: var(--peach);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 33% 100%);
+    height: 75px;
+    position: absolute;
+    right: -150px;
+    width: 225px;
+    transition: transform 0.5s;
+    animation: none;
+    display:flex;
+    justify-content: end;
+  }
+
+  .notification-center:hover {
+    transform: translateX(-150px)
+  }
+
+  .notification-message-box {
+    align-items: center;
+    display: flex;
+    height: 75px;
+    justify-content: end;
+    width: 150px;
+  }
+
+
+</style>
+  <nav class="navbar sticky-top navbar-floofbook">
+    <a class="navbar-floofbook-link" href="">Floofbook</a>
+    <div class="notification-center">
+      <div class="notification-message-box">
+        <p>{{this.animationMessage}}</p>
+      </div>
+    </div>
+  </nav>
