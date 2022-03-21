@@ -70,8 +70,10 @@
     "edition": "octane"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "ember-bootstrap": "^4.9.0",
     "ember-simple-auth": "^4.1.1",
+    "fetch": "^1.1.0",
     "koa": "^2.13.4",
     "nodemon": "^2.0.15"
   }
